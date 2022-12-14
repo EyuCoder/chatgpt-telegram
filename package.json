@@ -1,12 +1,31 @@
 {
   "name": "chatgpt",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "telegram bot for you chatgpt",
+  "main": "server.js",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eyucoder/chatgpt"
+  },
+  "author": {
+    "name": "eyucoder",
+    "email": "eyueldaniel0921@gmail.com",
+    "url": "https://github.com/eyucoder"
+  },
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "dependencies": {
+    "telegraf": "^4.11.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "eslint": "^8.29.0"
+  }
 }
