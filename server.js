@@ -29,6 +29,34 @@ process.once('SIGINT', () => bot.stop('SIGINT'));
 process.once('SIGTERM', () => bot.stop('SIGTERM'));
 
 
+
+
+
+
+
+// async function chatGpt(msg, bot) {
+//   try {
+//     const openAIAuth = await getOpenAIAuth({ email, password })
+//     const api = new ChatGPTAPI({ ...openAIAuth })
+//     await api.ensureAuth()
+//     bot.sendMessage(msg.chat.id, '🤔正在组织语言...').then((res) => {
+//       bot.sendChatAction(msg.chat.id, 'typing')
+//       tempId = res.message_id
+//     })
+//     const response = await api.sendMessage(msg.text)
+//     bot.deleteMessage(msg.chat.id, tempId)
+//     console.log(new Date().toLocaleString(), '--AI回复:<', msg.text, '>:', response);
+//     bot.sendMessage(msg.chat.id, response, { parse_mode: 'Markdown' });
+//   } catch (err) {
+//     console.log(err)
+//     tempId && bot.deleteMessage(msg.chat.id, tempId)
+//     bot.sendMessage(msg.chat.id, '😭出错了，请稍后再试；如果您是管理员，请检查日志。');
+//     throw err
+//   }
+// }
+
+
+
 async function chatGpt(msg) {
   try {
     const api = new ChatGPTAPI({
