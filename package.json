@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "telegram bot for you chatgpt",
   "main": "server.js",
-  "type": "commonjs",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/eyucoder/chatgpt"
@@ -19,13 +19,28 @@
   },
   "keywords": [
     "telegram",
+    "bot",
+    "openai",
+    "chatgpt",
+    "gpt",
+    "gpt3",
+    "chatbot",
+    "chat",
+    "machine learning",
+    "conversation",
+    "conversational ai",
+    "ai",
+    "ml",
     "bot"
   ],
   "dependencies": {
+    "chatgpt": "^2.3.2",
+    "puppeteer": "^19.4.0",
     "telegraf": "^4.11.2"
   },
   "devDependencies": {
     "dotenv": "^16.0.3",
-    "eslint": "^8.29.0"
+    "eslint": "^8.29.0",
+    "nodemon": "^2.0.20"
   }
 }
